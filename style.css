@@ -1,0 +1,43 @@
+
+.path {
+    animation: draw 20s infinite;
+    animation-timing-function: linear;
+  }
+  .path-01 {
+    animation-delay: 0s;
+  }
+  .path-02 {
+    animation-delay: 1s;
+  }
+  .path-03 {
+    animation-delay: 2s;
+  }
+  .path-04 {
+    animation-delay: 3s;
+  }
+  .path-05 {
+    animation-delay: 4s;
+  }
+  
+  
+  
+  @keyframes draw {
+    0% {
+    }
+    100% {
+      stroke-dashoffset: 0;
+      stroke-opacity: 1;
+    }
+  }
+
+.alert {
+    background-color: hsl(var(--b1) / 1);
+}
+
+p, h1, h2, h3, h4, h5, h6, li, a, button {
+    font-family: stratum-2-web, sans-serif !important;
+}
+
+.team-grid .card {
+    max-width: 37vh;
+}
