@@ -38,7 +38,7 @@
           <li><a href="#sponsors" onclick="lenis.scrollTo('#sponsors')">Sponsors</a></li>
           <li><a href="#about" onclick="lenis.scrollTo('#about')">About</a></li>
           <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
-          <li><a href="/" class="link-info">Sign Up</a></li>
+          <li><a onclick="interest_form_modal.showModal()" class="link-info">Sign Up</a></li>
         </ul>
       </div>
     </div>
@@ -1278,12 +1278,22 @@
       </g>
     </svg>
 
+    <dialog id="interest_form_modal" class="modal">
+    <form method="dialog" class="modal-box">
+      <iframe data-tally-src="https://tally.so/embed/3xj7AG?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Hack the Grid Interest Form"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      <div class="modal-action" style="margin-top: 0px;">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </div>
+    </form>
+  </dialog>
+
     <div class="hero min-h-screen bg-base-100">
       <div class="hero-content text-center">
         <div class="max-w-md">
           <h1 class="text-5xl font-bold">Hack the Grid</h1>
           <p class="py-6">An 8 hour in-person event where everyone gets a chance to voice their ideas on making cities better.</p>
-          <a href="/"><button class="btn btn-info">Sign Up</button></a>
+          <a onclick="interest_form_modal.showModal()"><button class="btn btn-info">Sign Up</button></a>
           <a href="#info" onclick="lenis.scrollTo('#info')"><button class="btn btn-neutral">Learn More</button></a>
         </div>
       </div>
