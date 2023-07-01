@@ -41,3 +41,9 @@ p, h1, h2, h3, h4, h5, h6, li, a, button {
 .team-grid .card {
     max-width: 37vh;
 }
+
+@media only screen and (min-width: 1080px) {
+.wide-on-big-screen {
+  width: 75vh;
+}
+}
