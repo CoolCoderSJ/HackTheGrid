@@ -47,3 +47,12 @@ p, h1, h2, h3, h4, h5, h6, li, a, button {
   width: 75vh;
 }
 }
+
+.card figure {
+  height: 350px;
+}
+
+.fillbg {
+  background-size: cover;
+  background-position: center;
+}
