@@ -1,16 +1,3 @@
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
 const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
   new Promise((resolve, reject) => {
@@ -36,13 +23,13 @@ $(document).ready(function(){
         menu.parentElement.innerHTML = `<div class="dropdown dropdown-end">
         <label tabindex="0" class="btn m-1"><svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg></label>
         <ul class="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52">
-        <li><a href="#info" onclick="lenis.scrollTo('#info')">Info</a></li>
-          <li><a href="#schedule" onclick="lenis.scrollTo('#schedule')">Schedule</a></li>
-          <li><a href="#prizes" onclick="lenis.scrollTo('#prizes')">Prizes</a></li>
-          <li><a href="#faq" onclick="lenis.scrollTo('#faq')">FAQ</a></li>
-          <li><a href="#sponsors" onclick="lenis.scrollTo('#sponsors')">Sponsors</a></li>
-          <li><a href="#about" onclick="lenis.scrollTo('#about')">About</a></li>
-          <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
+        <li><a href="#info">Info</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#prizes">Prizes</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a onclick="interest_form_modal.showModal()" class="link-info">Sign Up</a></li>
         </ul>
       </div>`
