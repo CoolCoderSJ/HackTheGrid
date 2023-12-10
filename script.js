@@ -30,7 +30,6 @@ $(document).ready(function(){
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://events.mlh.io/events/10679-hack-the-grid-pittsburgh-pa" target="_blank" class="link-info">Sign Up</a></li>
         </ul>
       </div>`
     }
